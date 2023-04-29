@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" mb-6 flex h-20 items-center justify-between ">
+    <nav className="mb-6 flex h-20 items-center justify-between rounded-sm   ">
       <div className="flex items-center">
         <img src={mainLogo} alt="sub logo" className="h-auto w-24" />
       </div>
@@ -20,9 +20,12 @@ const Navbar = () => {
         <ul className="flex items-center justify-end space-x-8">
           {navbarLinks.map((link) => (
             <li key={link.id}>
-              <Link to={`/#${link.id}`} className="text-gray-500 hover:text-gray-900">
+              <a
+                href={link.id !== "" ? `#${link.id}` : "#home"} //FIXME
+                className="text-gray-500 hover:text-gray-900"
+              >
                 {link.title}
-              </Link>
+              </a>
             </li>
           ))}
           <li>
@@ -44,12 +47,12 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="absolute inset-0 bg-white md:hidden">
+        <div className="absolute inset-0  bg-white md:hidden">
           <ul className="flex h-full flex-col items-center justify-center space-y-4">
             {navbarLinks.map((link) => (
               <li key={link.id}>
                 <Link
-                  to={`/#${link.id}`}
+                  to={`#${link.id}`}
                   className="block px-4 py-2 text-gray-500 hover:text-gray-900"
                   onClick={toggleMenu}
                 >
