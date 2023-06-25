@@ -59,4 +59,26 @@ const works = [
   },
 ];
 
-export { navbarLinks, options, works };
+const benefits = [
+  {
+    id: 1,
+    title: "Flexible working hours",
+    description: "You can decide when, and how much time you want to drive.",
+    img: "./src/assets/benf1.png",
+  },
+
+  {
+    id: 2,
+    title: "Earnings",
+    description: "By driving with tere you can earn more.",
+    img: "./src/assets/benf2.png",
+  },
+  {
+    id: 3,
+    title: "Customer support 24/7",
+    description:
+      "Tere is a local service provider and we are proud to support you in your local language. We are proud to be at your service 24/7!",
+    img: "./src/assets/benf3.png",
+  },
+];
+export { navbarLinks, options, works, benefits };

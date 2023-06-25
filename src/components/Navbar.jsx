@@ -1,17 +1,18 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+
 import { mainLogo, menu, close } from "../assets";
 import { navbarLinks } from "../constants";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const body = document.querySelector("body");
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    body.style.overflow = isMenuOpen ? "auto" : "hidden";
   };
 
   return (
-    <nav className="mb-6 flex h-20 items-center justify-between rounded-sm   ">
+    <nav className="mb-6 flex h-20 items-center justify-between rounded-sm ">
       <div className="flex items-center">
         <img src={mainLogo} alt="sub logo" className="h-auto w-24" />
       </div>
@@ -19,9 +20,9 @@ const Navbar = () => {
       <div className="hidden md:flex">
         <ul className="flex items-center justify-end space-x-8">
           {navbarLinks.map((link) => (
-            <li key={link.id}>
+            <li className="cursor-pointer" key={link.id}>
               <a
-                href={link.id !== "" ? `#${link.id}` : "#home"} //FIXME
+                href={link.id !== "" ? `#${link.id}` : "#"} //FIXME
                 className="text-gray-500 hover:text-gray-900"
               >
                 {link.title}
@@ -47,17 +48,17 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="absolute inset-0  bg-white md:hidden">
+        <div className="fixed inset-0 h-screen bg-white md:hidden">
           <ul className="flex h-full flex-col items-center justify-center space-y-4">
             {navbarLinks.map((link) => (
               <li key={link.id}>
-                <Link
-                  to={`#${link.id}`}
+                <a
+                  href={link.id !== "" ? `#${link.id}` : "#"} //FIXME
                   className="block px-4 py-2 text-gray-500 hover:text-gray-900"
                   onClick={toggleMenu}
                 >
                   {link.title}
-                </Link>
+                </a>
               </li>
             ))}
             <li>

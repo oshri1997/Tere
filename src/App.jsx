@@ -1,14 +1,15 @@
 import { BrowserRouter as Router } from "react-router-dom";
-import { Navbar, Hero, Works, CallToDownload } from "./components";
+import { Navbar, Hero, Works, CallToDownload, Benefits } from "./components";
 
 function App() {
   return (
     <Router>
-      <div className="container max-w-screen-xl  px-6 py-6  dark:text-white ">
+      <div className="container max-w-screen-xl px-6 py-6 ">
         <Navbar />
         <Hero />
         <CallToDownload />
         <Works />
+        <Benefits />
       </div>
     </Router>
   );
