@@ -1,5 +1,5 @@
 import { BrowserRouter as Router } from "react-router-dom";
-import { Navbar, Hero, Works, CallToDownload, Benefits } from "./components";
+import { Navbar, Hero, Works, CallToDownload, Benefits, Footer } from "./components";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
         <Works />
         <Benefits />
       </div>
+      <Footer />
     </Router>
   );
 }

@@ -7,6 +7,7 @@ import PhoneApp from "./PhoneApp";
 import WorkNum from "./WorkNum";
 import WorkFeature from "./WorkFeature";
 import Benefits from "./Benefits";
+import Footer from "./Footer";
 export {
   WorkFeature,
   WorkNum,
@@ -17,4 +18,5 @@ export {
   Works,
   PhoneApp,
   Benefits,
+  Footer,
 };

@@ -12,6 +12,7 @@ import homeIcon from "./homeIcon.svg";
 import profileIcon from "./profileIcon.svg";
 import notifiIcon from "./notifiIcon.svg";
 import greenCircle from "./greenCircle.svg";
+import blackLogo from "./blackLogo.png";
 
 export {
   mainLogo,
@@ -28,4 +29,5 @@ export {
   profileIcon,
   notifiIcon,
   greenCircle,
+  blackLogo,
 };
