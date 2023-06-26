@@ -3,8 +3,11 @@ import { works } from "../constants";
 
 const Works = () => {
   return (
-    <section id="about" className="flex flex-col items-center justify-center mt-20 ">
-      <div className="flex flex-col items-center justify-center ">
+    <section
+      id="about"
+      className="-z-1 relative mt-5 flex flex-col items-center justify-center "
+    >
+      <div className="-z-10 flex flex-col items-center justify-center ">
         <h1 className="text-[30px] font-extrabold text-black">
           HOW <span className="text-primary">TERE</span> WORKS
         </h1>
@@ -14,17 +17,17 @@ const Works = () => {
         </p>
       </div>
       {/* mobile  */}
-      <div className="w-full gap-8 mt-12 lg:hidden">
+      <div className="z-15 relative mt-12 w-full gap-8 lg:hidden">
         <PhoneApp />
-        <div className="flex flex-col items-center justify-around w-full mt-12 gap-7 xl:col-span-4 xl:col-start-1 xl:flex">
+        <div className="relative -z-10 mt-12 flex w-full flex-col items-center justify-around gap-7 xl:col-span-4 xl:col-start-1 xl:flex">
           {works.map((work) => (
             <WorkFeature {...work} />
           ))}
         </div>
       </div>
       {/* desktop */}
-      <div className="hidden w-full gap-8 mt-6 lg:grid lg:grid-cols-12">
-        <div className="flex-col items-end justify-around hidden h-full lg:col-span-4 lg:col-start-1 lg:flex">
+      <div className="mt-6 hidden w-full gap-8 lg:grid lg:grid-cols-12">
+        <div className="hidden h-full flex-col items-end justify-around lg:col-span-4 lg:col-start-1 lg:flex">
           {works.map((work) => {
             return work.id % 2 == 1 && <WorkFeature {...work} />;
           })}

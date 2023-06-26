@@ -36,14 +36,14 @@ const BenefitCard = ({ benefit }) => {
           <h2 className="text-[25px] text-black lg:text-[34px]">{benefit.title}</h2>
         </div>
         {isMobile === false && (
-          <p className="w-2/3   text-[22px] text-[#9E9DA2]">{benefit.description}</p>
+          <p className="w-2/3   text-[22px] text-lightGray">{benefit.description}</p>
         )}
       </div>
       <div className={`flex h-[250px] w-[250px] basis-1/2 justify-center  `}>
         <img src={benefit.img} className="h-auto w-auto object-contain" alt="" />
       </div>
       {isMobile === true && (
-        <p className="w-2/3 text-center  text-[16px] text-[#9E9DA2]">{benefit.description}</p>
+        <p className="w-2/3 text-center  text-[16px] text-lightGray">{benefit.description}</p>
       )}
     </div>
   );

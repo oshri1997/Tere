@@ -1,7 +1,7 @@
 const navbarLinks = [
   {
     title: "Home",
-    id: "",
+    id: "home",
   },
   {
     title: "How tere works",

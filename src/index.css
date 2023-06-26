@@ -14,3 +14,10 @@ body {
   background-color: #f9f9f9;
   font-family: "Roboto", sans-serif;
 }
+
+@layer components {
+  .heroTitle {
+    @apply text-center text-[35px] font-black leading-[66px] text-black md:text-[45px] lg:text-left lg:text-[60px];
+    text-shadow: 4px 4px 9px #00000065;
+  }
+}

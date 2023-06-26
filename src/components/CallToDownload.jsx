@@ -10,7 +10,7 @@ const CallToDownload = () => {
       <div className="flex w-full flex-col gap-6 sm:justify-end lg:h-14 lg:flex-row lg:justify-center ">
         <input
           type="text"
-          className="w-full rounded-md  border-none px-4 py-3 text-xl tracking-wider  text-black placeholder:text-center placeholder:text-[#DADADA]   focus:border-none focus:outline-none  lg:basis-2/3 lg:placeholder:text-xl  "
+          className="w-full rounded-md border-none px-4 py-3 text-xl tracking-wider text-black placeholder:text-center placeholder:text-ligherGray focus:border-none focus:outline-none lg:basis-2/3 lg:placeholder:text-xl "
           placeholder="Enter mobile phone number"
         />
         <button className="w-full cursor-pointer rounded-md bg-black px-4 py-3 text-center text-xl text-white sm:py-6 lg:basis-1/3 lg:py-2">
