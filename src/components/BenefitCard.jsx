@@ -40,7 +40,7 @@ const BenefitCard = ({ benefit }) => {
         )}
       </div>
       <div className={`flex h-[250px] w-[250px] basis-1/2 justify-center  `}>
-        <img src={benefit.img} className="h-auto w-auto object-contain" alt="" />
+        <img src={benefit.img} className="h-auto w-auto object-contain" alt="benfImg" />
       </div>
       {isMobile === true && (
         <p className="w-2/3 text-center  text-[16px] text-lightGray">{benefit.description}</p>

@@ -16,19 +16,19 @@ const navbarLinks = [
 const options = [
   {
     title: "Home",
-    src: "./src/assets/homeIcon.svg",
+    src: "../assets/homeIcon.svg",
   },
   {
     title: "My trips",
-    src: "./src/assets/tripIcon.svg",
+    src: "../assets/tripIcon.svg",
   },
   {
     title: "Notifications",
-    src: "./src/assets/notifiIcon.svg",
+    src: "../assets/notifiIcon.svg",
   },
   {
     title: "My profile",
-    src: "./src/assets/profileIcon.svg",
+    src: "../assets/profileIcon.svg",
   },
 ];
 

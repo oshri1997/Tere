@@ -14,15 +14,8 @@ export default {
     },
     container: {
       center: true,
-      // screens: {
-      //   sm: "100%",
-      // },
     },
-    extend: {
-      colors: {
-        primary: "#75BF7A",
-      },
-    },
+    extend: {},
   },
   plugins: [require("tailwindcss-debug-screens")],
 };
